@@ -471,11 +471,10 @@
   border: 2px solid var(--text_color);
   padding: 30px 40px;
 }
-.dialog[opened] {
-  display: block;
-}
 
-.content_dialog {
+
+
+.content_dialog[opened] {
   display: flex;
   inline-size: clamp(257px, calc(16.0625rem + ((1vw - 3.75px) * 3.3803)), 293px);
   gap: 10px;
