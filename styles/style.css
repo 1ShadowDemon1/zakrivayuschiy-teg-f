@@ -41,7 +41,7 @@
   min-block-size: 100dvb;
   font-family: var(--main_font_family, sans-serif);
   font-weight: var(--main_font_weight);
-  font-variation-settings: var(--font_normal)
+  font-variation-settings: "wght" var(--font_normal)
 }
 
 .header {
@@ -216,7 +216,7 @@
   filter: hue-rotate(10deg);
 }
 
-.img_five{
+.img_five {
   filter: sepia(40%);
 }
 
@@ -458,6 +458,12 @@
     right: 22px;
   }
 }
+
+
+
+
+
+
 
 .dialog {
   inline-size: clamp(341px, calc(21.3125rem + ((1vw - 3.75px) * 1.5023)), 357px);
