@@ -41,6 +41,7 @@
   min-block-size: 100dvb;
   font-family: var(--main_font_family, sans-serif);
   font-weight: var(--main_font_weight);
+  font-variation-settings: var(--font_normal)
 }
 
 .header {
@@ -197,6 +198,38 @@
   inline-size: clamp(371px, 100%, 696px);
   border-block-start: 2px solid var(--text_color);
   border-block-end: 2px solid var(--text_color);
+}
+
+.img_one {
+  filter: grayscale(40%);
+}
+
+.img_two {
+  filter: invert(0.2);
+}
+
+.img_three {
+  filter: contrast(190%);
+}
+
+.img_four {
+  filter: hue-rotate(10deg);
+}
+
+.img_five{
+  filter: sepia(40%);
+}
+
+.img_six {
+  filter: blur(2.1);
+}
+
+.img_seven {
+  filter: saturate(0.4);
+}
+
+.img_eight {
+  filter: invert(1) saturate(60%) hue-rotate(90deg);
 }
 
 .projection {
