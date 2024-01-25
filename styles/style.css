@@ -471,8 +471,8 @@
   border: 2px solid var(--text_color);
   padding: 30px 40px;
 }
-.dialog[opened]{
-  display: none;
+.dialog[opened] {
+  display: block;
 }
 
 .content_dialog {
