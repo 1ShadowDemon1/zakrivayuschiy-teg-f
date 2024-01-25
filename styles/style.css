@@ -108,10 +108,6 @@
   transition: opacity 0.3s ease;
 }
 
-.theme-menu__button:focus {
-  outline: none;
-}
-
 .theme-menu__button[disabled]::before {
   content: "▶";
   position: absolute;
@@ -146,6 +142,7 @@
 .theme-menu__button:focus {
   opacity: 0.6;
   transition: opacity 0.3s ease;
+  outline: none;
 }
 
 .theme-menu__button::after {
@@ -317,6 +314,8 @@
   max-block-size: 38px;
   color: currentColor;
   transition: border 0.3s ease;
+  cursor: pointer;
+  padding-inline-end: 4px;
 }
 
 .card__icon-button:focus-visible {
@@ -328,12 +327,6 @@
 .sparks {
   opacity: 0;
 }
-
-.card__icon-button {
-  cursor: pointer;
-  padding-inline-end: 4px;
-}
-
 
 .like-icon:hover .core {
   fill: var(--text_color);
@@ -366,7 +359,7 @@
 }
 
 .like-icon.is-liked .core,
-.like-icon.is-liked .main-body  {
+.like-icon.is-liked .main-body {
   fill: var(--sparks_color);
 }
 
