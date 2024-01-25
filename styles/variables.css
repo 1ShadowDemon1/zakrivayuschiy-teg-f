@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+
+  --header_padding_block: clamp(120px, 7.1479rem + 1.5023vw, 136px);
+  --header_title_size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --main_font_family: "PressStart2P";
+  --main_font_weight: 400;
+  --sparks_color: #FF0000;
+
+  @media (prefers-color-scheme: light) {
+    --background_page: #fff;
+    --text_color: #000;
+    --backgroub_color_button: var(--background_page);
+    --background_theames_gradient_deg: #d3d3d3;
+    --background_theames_gradient: #e7e7e7, #1a1a1a;
+    --font_normal: 400;
+    --font_bold: 700;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    --background_page: #000;
+    --text_color: #00CC14;
+    --backgroub_color_button: var(--text_color);
+    --background_theames_gradient_deg: #000;
+    --background_theames_gradient: #007f0c, #004306;
+    --font_normal: 465;
+    --font_bold: 785;
+  }
+
+
+}
