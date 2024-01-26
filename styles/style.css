@@ -363,9 +363,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 130px;
-  height: 38px;
-  height: min-content;
   margin: 0 0 100px;
   border: 2px solid var(--text_color);
   padding: 15px 16px;
@@ -384,6 +381,7 @@
 .floppy {
   width: 27px;
   height: 100%;
+  color: var(--text_color);
 }
 
 @media (width >= 1358px) {
@@ -407,9 +405,6 @@
     width: 21px;
     height: 100%;
   }
-}
-
-@media (width <= 375x) {
 }
 
 .dialog {
@@ -465,10 +460,6 @@
   opacity: 0.75;
   background: var(--background_drop_dialog, #000);
   filter: none;
-}
-
-.floppy {
-  color: var(--text_color);
 }
 
 .floppy-icon {
