@@ -383,32 +383,9 @@
   color: var(--text_color);
 }
 
-@media (width >= 1358px) {
-  .projection {
-    right: 22px;
-  }
-
-  .main {
-    gap: 51px;
-  }
-
-  .section_picture {
-    margin-block-end: 27px;
-  }
-
-  .footer_button {
-    gap: 10px;
-  }
-
-  .floppy {
-    width: 21px;
-    height: 100%;
-  }
-}
-
 .dialog {
   border: 2px solid var(--text_color);
-  padding: 30px 25px;
+  padding: 31px 30px 30px 40px;
   background-color: var(--background_page);
   inline-size: clamp(
     341px,
@@ -421,8 +398,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 19px;
-  margin-block-end: 30px;
+  gap: 20px;
+  margin-block-end: 29px;
   inline-size: clamp(
     257px,
     calc(16.0625rem + ((1vw - 3.75px) * 3.3803)),
@@ -461,6 +438,38 @@
 }
 
 .floppy-icon {
-  width: 100px;
+  width: 95px;
   height: 100%;
+}
+
+@media (width >= 1358px) {
+  .projection {
+    right: 22px;
+  }
+
+  .main {
+    gap: 51px;
+  }
+
+  .section_picture {
+    margin-block-end: 27px;
+  }
+
+  .footer_button {
+    gap: 10px;
+  }
+
+  .floppy {
+    width: 21px;
+    height: 100%;
+  }
+
+  .floppy-icon {
+    width: 79px;
+    height: 100%;
+  }
+
+  .dialog {
+    padding: 29px 30px 30px 30px;
+  }
 }

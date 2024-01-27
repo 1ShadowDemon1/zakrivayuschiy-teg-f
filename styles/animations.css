@@ -42,11 +42,6 @@
   transition: fill 0.3s 0.03s linear;
 }
 
-.like-icon.is-liked .core {
-  fill: var(--sparks_color);
-  transition: fill 0.3s linear;
-}
-
 .like-icon:active .core {
   fill: var(--sparks_color);
   transition: fill 0.3s linear;
@@ -57,7 +52,7 @@
   transition: fill 0.3s linear;
 }
 
-.like-icon.is-liked:hover .core {
+.like-icon.is-liked .core {
   fill: var(--sparks_color);
   transition: fill 0.3s linear;
 }
@@ -68,7 +63,7 @@
 
 .like-icon.is-liked .contour {
   fill: var(--sparks_color);
-  transition: fill 0.1s linear;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart {
