@@ -116,6 +116,7 @@
   content: "▶";
   position: absolute;
   left: -12px;
+  top: 0;
   width: 16px;
   height: 13px;
   animation-name: loading;
@@ -272,22 +273,43 @@
 }
 
 .card__like-button {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 130px;
   height: 38px;
-  border: 2px solid var(--text_color);
   padding: 9px 17px;
+}
+
+.button_animation {
   overflow: hidden;
   color: var(--text_color);
   background-color: var(--background_page);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+  border: 2px solid var(--text_color);
+  position: relative;
 }
 
-.card__like-button:focus-visible {
+.button_animation:hover::after {
+  translate: 0%;
+}
+
+.button_animation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroub_color_button);
+  transition: translate 0.5s ease-in-out;
+  translate: -100%;
+  mix-blend-mode: difference;
+}
+
+.button_animation:focus-visible {
   box-shadow: 2px 2px 0 var(--text_color);
   outline: none;
 }
@@ -336,41 +358,18 @@
   outline: none;
 }
 
-.like-icon .core {
-  fill: transparent;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--sparks_color);
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--sparks_color);
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--sparks_color);
-}
-
 .section_footer {
   align-self: center;
 }
 
 .footer_button {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin: 0 0 100px;
-  border: 2px solid var(--text_color);
   padding: 15px 16px;
-  overflow: hidden;
-  color: var(--text_color);
-  background-color: var(--background_page);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
   inline-size: clamp(
     309px,
     calc(19.3125rem + ((1vw - 3.75px) * 2.4413)),
@@ -422,9 +421,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 19px;
   margin-block-end: 30px;
-  padding: 0 10px;
   inline-size: clamp(
     257px,
     calc(16.0625rem + ((1vw - 3.75px) * 3.3803)),
@@ -463,6 +461,6 @@
 }
 
 .floppy-icon {
-  width: 60px;
+  width: 100px;
   height: 100%;
 }
